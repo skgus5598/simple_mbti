@@ -25,8 +25,8 @@ const LoadingPage = (props) => {
 
     useEffect(() => {
         setTimeout(() => {
-            setReady(false);
             resultArr();
+            setReady(false);
         }, 3000);
     },[]);
 
