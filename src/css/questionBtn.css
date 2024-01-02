@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700);
+
+
+body {
+  /* font-family: 'Josefin Slab', serif; */
+  font-size: 20px;
+  /* line-height: 24px; */
+  color: #333;
+  background: #ececec;
+  overflow-y: scroll;
+}
+
+.resultImgs{
+  display: flex;
+}
+.resultImgs img{
+  width: 50%;
+  border-radius: 5%;
+}
+.resultImgs .img1{
+  width: 100%;
+}
+.resultImgs .img2{
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.img2{
+  filter: drop-shadow(10px 6px 6px #c3c3c3); 
+  animation: img2-logo-rotate infinite 10s;
+}
+
+@keyframes img2-logo-rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+
+p {
+  margin-bottom: 0.5em;
+}
+
+
+.container a,
+.container a:visited {
+  text-decoration: none;
+  color: #00AE68;
+  cursor: pointer;
+}
+
+.clear {
+  clear: both;
+}
+
+
+.articleTitle {
+  font-size: 1.15em;
+  font-weight: 700;
+  line-height: 1em;
+  color: #222;
+}
+
+
+.container {
+    width: 50%;
+  padding-top: 1em;
+  margin-top: 1em;
+  border-top: 
+    solid
+    1px
+    #CCC;
+}
+.container span{
+  padding-left: 10px;
+  padding-right: 10px;
+    padding-top: 5px;
+    font-size: smaller;
+}
+
+.container a.button {
+  display: block;
+  position: relative;
+  /* float: left; */
+  /* width: 120px; */
+  width: auto;
+  padding: 0;
+  margin: 10px 20px 10px 0;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+  color: #FFF;
+  border-radius: 5px;
+  transition: all 0.2s ;
+}
+
+.container .btnBlueGreen {
+  background: #00AE68;
+}
+
+.container .btnLightBlue {
+  /* background: #5DC8CD; */
+  background: hsl(0, 98%, 80%);
+}
+
+.container .btnOrange {
+  /* background: #FFAA40; */
+  background: hsl(244, 98%, 80%);
+
+}
+
+.container .btnPurple {
+  /* background: #A74982; */
+  background: hsl(210, 98%, 80%);
+}
+
+
+/* 3D */
+.container .btnBlueGreen.btnPush {
+  box-shadow: 0px 5px 0px 0px #007144;
+}
+
+.container .btnLightBlue.btnPush {
+  /* box-shadow: 0px 5px 0px 0px #1E8185; */
+  box-shadow: 0px 5px 0px 0px hsl(0, 82%, 72%);
+
+}
+
+.container .btnOrange.btnPush {
+  /* box-shadow: 0px 5px 0px 0px #A66615; */
+  box-shadow: 0px 5px 0px 0px hsl(244, 54%, 64%);
+
+  
+}
+
+.container .btnPurple.btnPush {
+  /* box-shadow: 0px 5px 0px 0px #6D184B; */
+  box-shadow: 0px 5px 0px 0px hsl(210, 74%, 57%);
+
+}
+
+.container .btnPush:hover {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.container .btnBlueGreen.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #007144;
+}
+
+.container .btnLightBlue.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #1E8185;
+}
+
+.container .btnOrange.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #A66615;
+}
+
+.container .btnPurple.btnPush:hover {
+  box-shadow: 0px 0px 0px 0px #6D184B;
+}
+.description{
+    text-align: left;
+    font-size: large;
+}
+
+/*PROGRESS BAR*/
+
+.progress {
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+  
+  .progress-bar {	
+    height: 18px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;  
+    transition-property: width, background-color;    
+  }
+  
+  .progress-striped .progress-bar { 	
+    background-color: #FCBC51; 
+    width: 100%; 
+    background-image: linear-gradient(
+          45deg, rgb(252,163,17) 25%, 
+          transparent 25%, transparent 50%, 
+          rgb(252,163,17) 50%,rgb(252,163,17) 75%,
+          transparent 75%, transparent); 
+    animation: progressAnimationStrike 6s;
+  }
+  
+  @keyframes progressAnimationStrike {
+       from { width: 0 }
+       to   { width: 25% }
+  }
+   
