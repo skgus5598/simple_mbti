@@ -16,7 +16,7 @@ const Main = () => {
                 <img src={main1} className="App-logo" alt="logo" />
 
                 <br/>
-                <a href="#" onClick={()=>{navigate('/questions')}}>
+                <a onClick={()=>{navigate('/mbti/questions')}}>
                     <span></span>
                     <span></span>
                     <span></span>

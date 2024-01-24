@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './css/custom.css'
 import heart from './img/heart.png';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import Main from './component/Main';
@@ -17,8 +18,8 @@ function App() {
       */
      }
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/questions" element={<Questions />} />
+          <Route path="/mbti" element={<Main />} />
+          <Route path="/mbti/questions" element={<Questions />} />
         </Routes>
       
     </div>

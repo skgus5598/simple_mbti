@@ -17,6 +17,11 @@ body {
   width: 50%;
   border-radius: 5%;
 }
+
+.resultDiv{
+  opacity: 1;
+  animation: fadeIn ease-in-out 3s;
+}
 .resultImgs .img1{
   width: 100%;
 }
@@ -28,6 +33,16 @@ body {
 .img2{
   filter: drop-shadow(10px 6px 6px #c3c3c3); 
   animation: img2-logo-rotate infinite 10s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes img2-logo-rotate {
@@ -66,7 +81,6 @@ p {
 
 
 .container {
-    width: 50%;
   padding-top: 1em;
   margin-top: 1em;
   border-top: 

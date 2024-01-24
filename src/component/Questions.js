@@ -34,7 +34,7 @@ const Questions = () => {
                         <Progress width = {100-(availableItem*100/maxItem)} />
                     </ProgressBarr>
 
-                    <div style={{width:"50%"}}>
+                    <div className='questionDiv' >
                         <h2>{questions[num].key}.</h2>
                         <h4>{questions[num].value}</h4>
                     </div>
@@ -84,7 +84,6 @@ export default Questions;
 
 
 const ProgressBarr = styled.div`
-    width: 50%;
     height: 30px;
     background-color: #FCBC51;
     border-radius:12px;
@@ -97,6 +96,13 @@ const ProgressBarr = styled.div`
         transparent 25%, transparent 50%, 
         rgb(252,163,17) 50%, rgb(252,163,17) 75%,
         transparent 75%, transparent); 
+    
+    @media screen and (min-width:768px) { 
+        width: 50%;
+    }        
+    @media screen and (max-width:767px) { 
+         width: 80%;
+    }    
     
 `;
 

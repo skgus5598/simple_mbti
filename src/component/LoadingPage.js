@@ -27,10 +27,8 @@ const LoadingPage = (props) => {
         setTimeout(() => {
             resultArr();
             setReady(false);
-        }, 3000);
+        }, 2000);
     },[]);
-
-    console.log("data : " + data); 
  
     const resultArr = () => {
         data.forEach((e, i ) => {
@@ -100,7 +98,6 @@ const LoadingPage = (props) => {
             copy.push("b");
             setRs_result(copy)
         }
-        console.log("resultRs : " + rs_result);
 
         rs_result.forEach((e, i ) => {
             if(i === 0){
@@ -118,7 +115,6 @@ const LoadingPage = (props) => {
             }
         });
         let resultObj = mbtiData.filter((e) => { return str === e.name});
-        console.log("resultobj :" + JSON.stringify(resultObj));
         setObj(resultObj[0]);
     }
 

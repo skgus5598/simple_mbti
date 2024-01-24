@@ -21,6 +21,7 @@
 
   /*START button*/
   .App-header a{
+    cursor: pointer;
     position: relative;
     display: inline-block;
     padding: 25px 30px;
@@ -123,6 +124,19 @@
     }
 }
   
+.descriptionDiv{
+    text-align: left;
+}
 
-  
-  
+@media screen and (max-width:767px) { 
+     .questionDiv, .container, .resultDiv{
+        width: 80%;
+    }  
+
+}
+@media screen and (min-width:768px) { 
+   .questionDiv, .container, .resultDiv{
+        width: 50%;
+    }  
+
+}
